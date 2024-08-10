@@ -20,7 +20,7 @@ func main() {
 
 func Style(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path == "/css/" {
-		http.Error(w, "Page not found", http.StatusNotFound)
+		ascii.ErrorHandler(w, "404 : Not Found", http.StatusNotFound)
 		return
 	}
 	// this serve static files and it strips the /css prefix and serves the static file from that directory

@@ -10,7 +10,6 @@ type ErrorData struct {
 }
 
 func ErrorHandler(w http.ResponseWriter, message string, statusCode int) {
-	// Set the response status code
 	w.WriteHeader(statusCode)
 	tmpl, err := template.ParseFiles("templates/error.html")
 	if err != nil {

@@ -1,10 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background: linear-gradient(to top, #79c7ca, #000000);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  margin: 0;
-  padding: 0;
-  height: 1000px;
+  height: 100vh;
 }
 
 h1 {
@@ -35,6 +39,7 @@ form {
   width: 90%;
   max-width: 600px;
 }
+
 p {
   width: 100%;
   text-align: right;
@@ -43,6 +48,7 @@ p {
   font-size: 1rem;
   margin-right: 80px;
 }
+
 .text {
   text-align: center;
   color: #e0e0e0;
@@ -70,10 +76,6 @@ p {
   padding: 0 18px;
   line-height: 50px;
   text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   margin-top: 10px;
 }
 
