@@ -8,7 +8,10 @@ WORKDIR /app
 COPY . .
 
 # Build the app with optional configuration 
-RUN go Build -o /3ab9or
+RUN go build -o /3ab9or
+
+LABEL version="1.0"
+LABEL description="ASCII-ART-WEB"
 
 # tells Docker that the comtainer listens on specified network ports at runtime 
 EXPOSE 8080
