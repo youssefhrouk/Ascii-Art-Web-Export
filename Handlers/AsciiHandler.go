@@ -42,15 +42,6 @@ func AsciiHandler(w http.ResponseWriter, r *http.Request) {
 		Message: output,
 	}
 
-	if r.FormValue("exec") == "download" {
-
-		filename := "ascii-art.txt"
-		w.Header().Set("Content-Disposition", "attachment; filename="+filename)
-		w.Header().Set("Content-Type", "text/plain; charset=utf-8")
-		w.Write([]byte(output))
-		return
-	}
-
 	if err := tmpl.Execute(w, data); err != nil {
 		ErrorHandler(w, "500 : Internal Server Error", http.StatusInternalServerError)
 	}

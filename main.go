@@ -11,10 +11,9 @@ import (
 func main() {
 	http.HandleFunc("/", ascii.IndexHandler)
 	http.HandleFunc("/ascii-art", ascii.AsciiHandler)
-	http.HandleFunc("/download", ascii.DownloadAscii)
 	// This creates a file server to serve static files from the stylize directory.
 	http.HandleFunc("/css/", Style)
-
+	http.HandleFunc("/Download", ascii.DownloadHandler)
 	fmt.Println("Server starting on http://localhost:8080/")
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }

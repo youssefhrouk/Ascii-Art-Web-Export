@@ -1,4 +1,4 @@
-# ascii-art-web-dockerize
+# ascii-art-web-export
 
 ## Objectives
 The goal of this project is to enhance the original Ascii-Art-Web by making the site:
@@ -9,10 +9,12 @@ The goal of this project is to enhance the original Ascii-Art-Web by making the 
 
 ## Instructions
 To achieve the objectives, the project must meet the following requirements:
+
 - The project must contain CSS to style the website.
 - The code must follow good coding practices.
 - The text must be legible regardless of the colors used.
 - The website must be consistent, responsive, and interactive.
+- The application must be containerized using Docker, including the creation of a Dockerfile, an image, and a container.
 
 We recommend researching the principles of good website design to guide your enhancements.
 
@@ -21,12 +23,14 @@ We recommend researching the principles of good website design to guide your enh
 - **Improved User Interface**: Enhanced UI with CSS for a more appealing and user-friendly experience.
 - **Responsive Design**: Ensures the website is usable on various devices and screen sizes.
 - **Interactive Elements**: Provides feedback to users through interactive elements.
+- **Dockerized Environment**: The application is containerized using Docker, ensuring that it runs consistently in different environments.
 
 ## Technologies Used
 - **Backend**: Go (Golang)
 - **Frontend**: HTML, CSS
 - **HTTP Server**: Go's `net/http` package
 - **Templates**: Go's `html/template` package
+- **Containerization**: Docker
 
 <!DOCTYPE html>
 <meta charset="UTF-8">
@@ -41,10 +45,11 @@ We recommend researching the principles of good website design to guide your enh
 <body>
     <h1>Ascii-Art-Web Project Structure</h1>
     <pre>
-ascii-art-stylize/
+ascii-art-dockerize/
 ├── main.go
 ├── Handlers/
 │   ├── AsciiHandler.go
+│   │── DownloadHandler.go
 │   │── ErrorHandler.go
 │   └── IndexHandler.go
 ├── ascii/
@@ -55,12 +60,13 @@ ascii-art-stylize/
 │   ├── HandleNewLines.go
 │   ├── Printer.go
 │   └── ValidateInput.go
-└── templates/
-    ├── index.html
-    ├── error.html
-    └── ascii-art.html
-└── stylize/
-    └── index.css
+├── templates/
+│   ├── index.html
+│   ├── error.html
+│   └── ascii-art.html
+├── stylize/
+│   └── index.css
+└── Dockerfile
     </pre>
 </body>
 

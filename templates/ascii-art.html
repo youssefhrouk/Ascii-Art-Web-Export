@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
     <title>Program Output</title>
 </head>
+
 <body>
-    <h1>program output</h1>
+    <h1>Program Output</h1>
     <table>
         <tbody>
             <tr>
-                <td><pre>{{.Message}}</pre></td>
+                <td>
+                    <pre>{{.Message}}</pre>
+                </td>
             </tr>
         </tbody>
     </table>
-        
-    <button class="button btn" onclick="history.back()">Go back</button>
+    <div class="button-container">
+        <form action="/Download" method="post">
+            <input type="hidden" name="ascii" value="{{.Message}}">
+            <button type="submit" class="button btn">
+                Download
+            </button>
+        </form>
+        <button class="button btn" onclick="history.back()">Go back</button>
+    </div>
 </body>
 </html>

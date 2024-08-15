@@ -8,7 +8,7 @@
 </head>
 <body>  
     <h1 onclick="reloadPage()">Ascii Art Web</h1>
-    <form method="post" action="/ascii-art">
+    <form method="post" action="/ascii-art" class="formk">
         <label for="txt" class="label">Enter your text here:</label>
         <br>
         <textarea class="textarea" placeholder="Type something here.." id="txt" name="input" maxlength="1000" required></textarea>
@@ -20,7 +20,6 @@
             <option value="shadow">Shadow</option>
             <option value="thinkertoy">Thinkertoy</option>
         </select>
-        <button type="submit" class="button" formaction="/download">Download</button>
         <input class="button" type="submit">
     </form>
     <script>
