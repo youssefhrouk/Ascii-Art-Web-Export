@@ -78,19 +78,6 @@ p {
   text-align: center;
   margin-top: 10px;
 }
-.button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-  flex-wrap: nowrap; /* Prevent wrapping */
-}
-
-.button-container form {
-  margin: 0;
-  flex: 1; /* Allow form to grow */
-}
 
 .button:hover {
   background-color: #ffffff;
@@ -150,10 +137,7 @@ table {
 .btn {
   justify-content: center;
   display: flex;
-  /* margin: 1rem auto; */
-  margin: 0;
-  white-space: nowrap; /* Prevent button text from wrapping */
-  min-width: 0; /* Allow buttons to shrink */
+  margin: 1rem auto;
 }
 
 table tbody tr td pre {
@@ -240,15 +224,6 @@ table tbody tr td pre {
     font-size: 16px;
     padding: 0 10px;
     line-height: 40px;
-    padding: 0 10px; /* Reduce horizontal padding */
-    font-size: 14px; /* Reduce font size for smaller screens */
-    line-height: 40px; /* Reduce button height */
-    flex: 1; /* Allow buttons to grow and shrink equally */
-    min-width: 0; /* Allow buttons to shrink below their content size */
-  }
-  .button-container {
-    flex-direction: row; /* Keep buttons in a row */
-    justify-content: space-between; /* Spread buttons apart */
   }
   table {
     width: 100%;
