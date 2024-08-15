@@ -40,6 +40,7 @@ h1 {
   max-width: 600px;
 }
 
+
 p {
   width: 100%;
   text-align: right;
@@ -164,7 +165,8 @@ table tbody tr td pre {
   form {
     width: 90%;
     height: auto;
-    padding: 10px;
+    padding: 5px;
+    margin: 1rem auto;
   }
   p {
     font-size: 0.9rem; 
@@ -187,6 +189,13 @@ table tbody tr td pre {
     height: 300px;
     width: 100%;
   }
+  .btn{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 1rem auto;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -205,6 +214,7 @@ table tbody tr td pre {
     width: 90%;
     height: auto;
     padding: 5px;
+    margin: 1rem auto;
   }
   p {
     font-size: 0.8rem;
@@ -220,16 +230,18 @@ table tbody tr td pre {
   .label {
     font-size: 1rem;
   }
-  .button {
-    font-size: 16px;
-    padding: 0 10px;
-    line-height: 40px;
-  }
   table {
     width: 100%;
   }
   table tbody tr td pre {
     height: 300px;
     width: 100%;
+  }
+  .btn{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    margin: 1rem auto;
   }
 }
